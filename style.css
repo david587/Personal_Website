@@ -10,7 +10,7 @@ body{
     /* margin-left: 10%;
     margin-right: 10%; */
     background: linear-gradient(-45deg, #EE7752, #3df8f8, #f8d7a7,#23D5AB);
-    height: 200vh;
+    height: 150vh;
     color: #fff;
     background-size: 400% 400%;
     position: relative;
@@ -283,3 +283,33 @@ form {
     font-size: 16px;
     font-weight: 400;
   }
+  .line3{
+    margin-top: 10px;
+  }
+ .bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+ }  
+.name{
+width: 200px;
+margin-top: 10px;
+}
+
+
+.social{
+margin-top: 25px;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+width: 200px;
+}
+.git{
+    width: 30px;
+}
+.facebook{
+    width:30px;
+}
+.linkedin{
+    width:30px;
+}
