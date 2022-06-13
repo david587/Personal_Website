@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    /* padding-left: 20px;
+    padding-right: 20px; */
+    font-family: Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    box-sizing: border-box;
+}
+
+body{
+    /* margin-left: 10%;
+    margin-right: 10%; */
+    background: linear-gradient(-45deg, #EE7752, #3df8f8, #f8d7a7,#23D5AB);
+    height: 100vh;
+    color: #fff;
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 30s ease-in-out infinite;
+    
+
+}
+.header{
+   
+}
+@keyframes change{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    padding: 15px;
+}
+.picture{
+width: 120px;
+
+}
+
+.profile_div{
+
+}
+
+.profile_pic{
+width: 45px;
+margin-top: 10px;
+border-radius: 25px;
+}
+
+.tabs_place{
+flex: 1;
+
+}
+
+.tabs{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    
+    
+}
+.home{
+flex: 1;
+padding: 6px;
+}
+
+a{
+text-decoration: none;
+color: rgb(236, 235, 235);
+font-size: 19px;
+}
+
+.about{
+flex:1;
+
+padding: 6px;
+}
+.projects{
+flex: 1;
+
+padding: 6px;
+}
+
+.theme{
+width: 120px;
+
+}
+
+.btn_div{
+padding-left: 70px;
+margin-top: 10px;
+}
+
+.theme_btn{
+    width: 45px;
+    height: 45px;
+    border-radius: 25px;
+    border: solid 1px rgb(235, 235, 235);
+
+}
+
+.theme_img{
+    width: 25px;
+}
+
+.flex_mid{
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+}
+.me{
+    flex: 1;
+}
+h1{
+    font-size: 48px;
+    font-weight: 600;
+    text-align: left;
+    
+}
+.David{
+    color: rgb(43, 40, 40);
+    font-size: 45px;
+    font-weight: 600;
+    
+}
+.profile{
+    margin-top: 70px;
+    width: 220px;
+}
+.profile_mid{
+    width: 140px;
+    border-radius: 70px;
+}
+
+.btn_me{
+display: inline-block;
+}
+.button_me{
+padding: 10px;
+width: 190px;
+height: 50px;
+border-radius: 40px;  
+color: rgb(109, 106, 106);
+font-size: 19px;
+font-weight: 400;
+border: solid rgb(235, 233, 233);  
+}
+.btn_git{
+    display: inline-block;
+}
+.button_git{
+    margin-left: 15px;
+padding: 10px;
+width: 190px;
+height: 50px;
+border-radius: 40px;  
+color: rgb(236, 236, 236);
+font-size: 19px;
+font-weight: 400;
+border: solid rgb(37, 35, 35);
+background-color: rgb(43, 40, 40);
+}
+
+.line{
+margin-top: 74px;
+margin-bottom: 74px;
+text-align: center;
+font-size: 29px;
+}
