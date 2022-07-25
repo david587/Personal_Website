@@ -565,3 +565,30 @@ display: inline-block;
     font-size: 18px;
     font-weight: 400;
 }
+/*
+PROJECTS TAB
+*/
+
+.introduction-flex{
+    padding-top: 60px;
+    display: flex;
+    flex-direction: row;
+}
+.info1{
+    width: 310px;
+    background-color: #3df8f8;
+}
+.proj_h1{
+
+}
+
+.fa-solid{
+    position: absolute;
+    right: 20px;
+    font-size: 25px;
+}
+.info2{
+    flex: 1;
+    background-color: #527e7e;
+    position: relative;
+}
