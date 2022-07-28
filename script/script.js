@@ -1,7 +1,9 @@
-//localStorage.removeItem("color");
+//elements
 const themeBtn = document.getElementById("themebtn");
+
 //events
 themeBtn.addEventListener("click",changetheme);
+
 //functions
 function changetheme(){
     let settheme = document.body;
@@ -21,8 +23,8 @@ function changetheme(){
     localStorage.setItem("PageTheme", JSON.stringify(theme)); 
 };
 
+//Add to locale storage
 let getTheme = JSON.parse(localStorage.getItem("PageTheme"));
-
 if(getTheme === "BLUE"){
     document.body.classList.toggle("changetheme")
 }
