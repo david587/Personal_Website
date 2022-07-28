@@ -6,17 +6,21 @@
     box-sizing: border-box;
 }
 
-body{
+.body{
     /* margin-left: 10%;
     margin-right: 10%; */
-    background: linear-gradient(-45deg, #EE7752, #3df8f8, #f8d7a7,#23D5AB);
+    background: linear-gradient(-45deg, #EE7752, #3df8f8, #f6cf96,#23D5AB);
     height: 150vh;
     color: #fff;
     background-size: 400% 400%;
     position: relative;
     animation: change 30s ease-in-out infinite;
-    
+}
 
+.changetheme{
+    background: linear-gradient(-45deg, #282322, #242c56, #4badf4,#d9d9da);
+    height: 150vh;
+    background-size: 400% 400%;
 }
 .header{
    
@@ -569,7 +573,7 @@ display: inline-block;
 PROJECTS TAB
 */
 .projects{
-    margin-left: -30px;
+    
 }
 .introduction-flex{
     padding-top: 70px;
