@@ -45,7 +45,10 @@ localValue();
 //Get the messages from user
 function getElementMsg(){
 const textBtn = document.getElementById("send");
+//this if needs cause other html pages will drop error beacuse import
+if(document.body.contains(textBtn)){
 textBtn.addEventListener("click",takeMsg);
+}
 };
 function takeMsg(){
     const textArea = document.querySelector("#input");
