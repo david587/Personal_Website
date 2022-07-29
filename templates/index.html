@@ -5,8 +5,8 @@
     <title>Baráth Dávid</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="C:\Users\David\Desktop\code\Web\Portfolió\style\style.css">
-    
+    <link rel="stylesheet" href="/style/style.css">
+    <script type="module" defer src="\script\Home.js"></script>
 </head>
 <body class="body">
 <section class="header">
@@ -14,7 +14,7 @@
         <div class="nav">
             <div class="picture">
                 <div class="profile_div">
-                <img class="profile_pic" src="C:\Users\David\Desktop\code\Web\Portfolió\profile_pic\123026057_2099008166897023_618249393967907314_n.jpg" alt="">
+                <img class="profile_pic" src="\profile_pic\123026057_2099008166897023_618249393967907314_n.jpg" alt="">
                 </div>
             </div>
             <div class="tabs_place">
@@ -26,7 +26,7 @@
             </div>
             <div class="theme">
                 <div class="btn_div">
-               <button  data-color="changetheme" id="themebtn" class="theme_btn"><img class="theme_img" src="C:\Users\David\Desktop\code\Web\Portfolió\profile_pic\theme-icon-29.jpg" alt=""></button>
+               <button  data-color="changetheme" id="themebtn" class="theme_btn"><img class="theme_img" src="\profile_pic\theme-icon-29.jpg" alt=""></button>
                 </div>
                 </div>
             </div>
@@ -38,11 +38,11 @@
         <div class="me">
             <h1>Im <span class="David">&#68;a&nu;id</span>. Im a student, Lorem ipsum dolor sit amet consectetur , am.  </h1>
         </div>
-        <div class="profile"><img class="profile_mid" src="C:\Users\David\Desktop\code\Web\Portfolió\profile_pic\123026057_2099008166897023_618249393967907314_n.jpg" alt=""></div>
+        <div class="profile"><img class="profile_mid" src="\profile_pic\123026057_2099008166897023_618249393967907314_n.jpg" alt=""></div>
     </div>
     <div>
         <div class="btn_me">
-            <button  class="button_me">More about me</button>
+            <button onClick="location.href='About.html'"  class="button_me">More about me</button>
         </div>
         <div class="btn_git">
             <button  onclick="window.open('https://github.com/david587')" class="button_git">Check my Git</button>
@@ -56,17 +56,17 @@
 <br>
     <div class="grid_projects">
         <div class="grid_top">
-            <img class="grid_img" src="C:\Users\David\Desktop\code\Web\Portfolió\project_thumbnail\Screenshot_2019-05-08 JavaScript Event(1).png" alt="">
+            <img onClick="location.href='Project.html'" class="grid_img" src="\project_thumbnail\Screenshot_2019-05-08 JavaScript Event(1).png" alt="">
             <p class="grid_p">Basic Calculator</p>
             <span class="grid_span">Jun 12,2022</span>
         </div>
         <div class="grid_mid">
-            <img class="grid_img" src="C:\Users\David\Desktop\code\Web\Portfolió\project_thumbnail\tic-tac-toe-5.png" alt="">
+            <img  onClick="location.href='Project.html'" class="grid_img" src="\project_thumbnail\tic-tac-toe-5.png" alt="">
             <p class="grid_p">Tic Tac Toe</p>
             <span class="grid_span">Jun 14,2022</span>
         </div>
         <div class="grid_bot">
-            <img id="img" src="C:\Users\David\Desktop\code\Web\Portfolió\project_thumbnail\Capture.PNG" alt="">
+            <img  onClick="location.href='Project.html'" id="img" src="\project_thumbnail\Capture.PNG" alt="">
             <p class="grid_p">Film record book</p>
             <span class="grid_span">May 03,2022</span>
         </div>
@@ -77,8 +77,8 @@
         <span class="grid_span">If you have some kind words for me :) </span>
         <div class=line2></div>
         <form>
-        <input  class="spam" type="text" placeholder="Hi! :)">
-        <button class="send_btn">Send</button>
+        <input  id="input" class="spam" type="text" placeholder="Hi! :)">
+        <button  id="send" class="send_btn">Send</button>
         </form>
         <div class=line3></div>
     </fieldset>
@@ -89,15 +89,13 @@
             <p>© 2022 Baráth Dávid</p>
         </div>
         <div class="social">
-            <div><img class="git" src="C:\Users\David\Desktop\code\Web\Portfolió\social\25231.png" alt=""></div>
-            <div><img class="facebook" src="C:\Users\David\Desktop\code\Web\Portfolió\social\Facebook_f_logo_(2019).svg.png" alt=""></div>
-            <div><img  class="linkedin" src="C:\Users\David\Desktop\code\Web\Portfolió\social\Linkedin-logo-on-transparent-Background-PNG-.png" alt=""></div>
+            <div><img class="git" src="\social\25231.png" alt=""></div>
+            <div><img class="facebook" src="\social\Facebook_f_logo_(2019).svg.png" alt=""></div>
+            <div><img  class="linkedin" src="\social\Linkedin-logo-on-transparent-Background-PNG-.png" alt=""></div>
         </div>
         
     </div>
     
 </section>
-
-<script src="C:\Users\David\Desktop\code\Web\Portfolió\script\script.js"></script>
 </body>
 </html>
