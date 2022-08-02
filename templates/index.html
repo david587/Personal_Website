@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
     <script type="module" src="\script\Home.js"></script>
 </head>
 <body class="body">
@@ -27,6 +30,8 @@
             <div class="theme">
                 <div class="btn_div">
                <button  data-color="changetheme" id="themebtn" class="theme_btn"><img class="theme_img" src="\profile_pic\theme-icon-29.jpg" alt=""></button>
+               <button class="mobile_btn"><i id="bar" class="fa-solid fa-bars"></i></button> 
+               
                 </div>
                 </div>
             </div>
@@ -40,7 +45,7 @@
         </div>
         <div class="profile"><img class="profile_mid" src="\profile_pic\123026057_2099008166897023_618249393967907314_n.jpg" alt=""></div>
     </div>
-    <div>
+    <div class="btn">
         <div class="btn_me">
             <button onClick="location.href='About.html'"  class="button_me">More about me</button>
         </div>
@@ -53,7 +58,8 @@
 <section class="project">
     <h2>I love to improve my skills through projects.</h2>
     <p>Check out a few of my most recent projects.</p>
-<br>
+    </div>
+    <br>
     <div class="grid_projects">
         <div class="grid_top">
             <img onClick="location.href='Project.html'" class="grid_img" src="\project_thumbnail\Screenshot_2019-05-08 JavaScript Event(1).png" alt="">
@@ -66,8 +72,8 @@
             <span class="grid_span">Jun 14,2022</span>
         </div>
         <div class="grid_bot">
-            <img  onClick="location.href='Project.html'" id="img" src="\project_thumbnail\Capture.PNG" alt="">
-            <p class="grid_p">Film record book</p>
+            <img class="grid_img"  onClick="location.href='Project.html'" src="\project_thumbnail\todo.png" alt="">
+            <p class="grid_p">To do App</p>
             <span class="grid_span">May 03,2022</span>
         </div>
     </div>
