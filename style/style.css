@@ -247,10 +247,18 @@ p{
 
 .grid_projects{
     display: grid;
+    justify-content: center;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 10px;
     line-height: 17px;
 }
+@media(max-width:1785px){
+    
+    .grid_top{
+        margin-left: -20px;
+    }
+}
+
 /*815*/
 @media(max-width:1200px){
     .grid_projects {
@@ -314,6 +322,12 @@ p{
      margin-right: 5%;
     }
     }
+    @media (max-width:650px){
+       .button_me{
+        margin-left: -50px;
+       }
+        }
+        
     @media (min-width:400px){
         body{
          margin-left: 8%;
