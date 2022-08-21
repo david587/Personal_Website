@@ -1,4 +1,5 @@
 //Theme
+barButton();
 getElement();
 getLocalTheme();
 
@@ -68,6 +69,25 @@ if(getInput.length>5){
     localStorage.removeItem("InputValue");
 }
 };
+
+function barButton(){
+    // if(document.classList.contains("bar")){
+    const barbtn = document.getElementById("bar");
+    if(document.body.classList.contains("")){}
+    const x = document.getElementById("x");
+    barbtn.addEventListener("click",openmodal)
+    x.addEventListener("click",closeModal);
+    
+    function openmodal(){
+       const modal=document.getElementsByClassName("modal");
+       modal[0].classList.toggle("open-modal");
+    }
+    function closeModal(){
+        const modal=document.getElementsByClassName("modal");
+       modal[0].classList.toggle("open-modal");
+    }
+}
+// }
 
 
 

@@ -1,0 +1,26 @@
+@media (max-width:376px){
+    .body{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .margin{
+        margin-left: 24px;
+        padding-top: 25px;
+    }
+    .m_home,
+    .m_about,
+    .m_projects{
+    color: #111827;
+    line-height: 45px;
+    font-size: 17px;
+    font-weight: 500;
+    }
+    }
+
+    .work_exp{
+        margin-left: -20%;
+        margin-right: -20%;
+        margin-top: 50px;
+        margin-bottom: 150px;
+        text-align: left;
+    }

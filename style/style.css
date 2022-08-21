@@ -1,21 +1,27 @@
 *{
     padding: 0;
-    /* padding-left: 20px;
-    padding-right: 20px; */
     font-family: Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
     box-sizing: border-box;
 }
-
-.body{
-    /* margin-left: 10%;
-    margin-right: 10%; */
-    background: linear-gradient(-45deg, #EE7752, #76d4bb, #f6cf96,#23D5AB);
-    height: 150vh;
-    color: #fff;
-    background-size: 400% 400%;
-    position: relative;
-    animation: change 20s ease-in-out infinite;
+html{
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
 }
+
+
+    .body{
+        /* margin-left: 10%;
+        margin-right: 10%; */
+        background: linear-gradient(-45deg, #EE7752, #76d4bb, #f6cf96,#23D5AB);
+        height: 150vh;
+        width: 130vh;
+        color: #fff;
+        background-size: 400% 400%;
+        position: relative;
+        animation: change 5s ease-in-out infinite;
+    }
+
 
 .changetheme{
     background: linear-gradient(-45deg, #EE7752, #242c56, #40a3e9,#EE7752);
@@ -123,6 +129,7 @@ margin-top: 10px;
 }
 .mobile_btn{
     display: none;
+    position: relative;
 }
 
 .theme_img{
@@ -207,7 +214,7 @@ border: solid rgb(37, 35, 35);
 background-color: rgb(43, 40, 40);
 }
 .button_git:hover{
-    margin-left: 15px;
+    /* margin-left: 15px; */
 padding: 10px;
 width: 190px;
 height: 50px;
@@ -252,11 +259,13 @@ p{
     column-gap: 10px;
     line-height: 17px;
 }
+
+/*mobile_view*/
 @media(max-width:1785px){
     
-    .grid_top{
+    /* .grid_top{
         margin-left: -20px;
-    }
+    } */
 }
 
 /*815*/
@@ -281,8 +290,8 @@ p{
         padding-left: 40px;
     }
     .btn{
-        margin-top: 20px;
-        padding-left: 90px;
+        /* margin-top: 20px;
+        padding-left: 90px; */
     }
     .theme_img{
         display: none;
@@ -314,7 +323,9 @@ p{
     .grid_projects {
         grid-template-columns: 1fr;
         }
-    
+    .body{
+        height: 200vh;
+    }
 }
    @media (min-width:800px){
     body{
@@ -324,7 +335,7 @@ p{
     }
     @media (max-width:650px){
        .button_me{
-        margin-left: -50px;
+        margin-left: 45px;
        }
         }
         
@@ -334,6 +345,36 @@ p{
          margin-right: 8%;
         }
         }
+    
+        @media (max-width:530px){
+           .btn{
+            display: grid;
+            justify-content: center;
+           }
+           .button_me{
+            margin-right: 45px;
+           }
+           .button_git{
+            margin-top: 10px;
+            margin-left: 45px;
+           }
+           .body{
+            height:300vh;
+            background-size: 400% 400%;
+            position: relative;
+           }
+
+           .mobile_btn{
+            margin-right: 70px;
+           }
+            }
+        
+            @media (max-width:375px){
+                .body{
+                    margin-left: 70px;
+                    margin-right: 0px;
+                }
+            }
 
    @media (min-width:1000px){
    body{
@@ -348,7 +389,116 @@ p{
     }
     }
 
+    @media screen and (max-width: 550px) and (min-width: 200px){
+        /* body{
+            height: 200vh;  
+        } */
+        .story{
+            text-align: center;
+        }
+    }
 
+    
+    /*iphone xe*/
+    @media (max-width:376px){
+        *{
+            overflow-x: hidden;
+            overflow-y: auto;
+            margin-left:0px;
+        }
+        .body{
+            max-width: 100%;
+            margin-left: 0px;
+            overflow-x: hidden;
+            /* margin-left:10px;
+            margin-right:10px; */
+        }
+        .nav{
+           
+        }
+        .profile_pic{
+            width:50px;
+        }
+        .nav{
+            position: relative;
+        }
+        .mobile_btn{
+            position: absolute;
+            right: 0;
+            margin-right: 30px;
+            
+        }
+        .profile_mid{
+            width: 160px;
+            border-radius: 80px;
+        }
+        .profile{
+            display:inline;
+            position: absolute;
+            top: 60px;
+            left: 31%;
+        }
+        .David{
+            font-size: 2.4rem;
+        }
+        h1{
+            /* font-size: 2.1rem; */
+            font-size:11vw;
+            font-weight: 500;
+            text-align:center;
+            margin-top: 90px;
+        }
+        .me{
+            padding-left: 1px;
+        }
+        .button_me{
+            width: 340px;
+            font-weight: 500;
+            margin: 0;
+            margin-bottom: 10px;
+        }
+        .button_git{
+            width: 340px;
+            font-weight: 500;
+            margin: 0;
+        }
+        .btn_me{
+            margin-top: 30px;
+        }
+        .grid_projects{
+            line-height: 17px;
+        }
+        .grid_top,
+        .grid_mid{
+            margin-bottom: 30px;
+        }
+        .grid_p{
+            margin: 0;
+            line-height: 60px;
+        }
+        .tabs_place{
+            display: none;
+        }
+        p{
+            font-size: 17px;
+            width: 350px;
+        }
+        fieldset{
+          max-width: 304px;
+         
+        }
+        .name{
+            width: 350px;    
+        }
+        .git,
+        .facebook,
+        .linkedin{
+            margin-left: 17px;
+        }
+        .changetheme{
+            margin-left: 0;
+        }
+       }
    
 .grid_top{
     width: 1fr;
@@ -467,6 +617,8 @@ form {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    /* margin-left: -20%;
+    margin-right: -20%; */
 
  }  
 .name{
@@ -506,21 +658,13 @@ h3{
     font-weight: 400;
     text-align: center;
 }
-@media screen and (max-width: 550px) and (min-width: 200px){
-    body{
-        height: 200vh;  
-    }
-    .story{
-        text-align: center;
-    }
-}
-
 .story{
-    text-align: left;
+    text-align: center;
     font-size: 19px;
 }
 .aboutimg_div{
-    height: 200px;
+    display: flex;
+    height: 240px;
     display: inline-block;
 }
 .aboutimg_div::after{
@@ -534,7 +678,7 @@ h3{
     border-radius: 6px;
     float: left;
     margin-right: 10px;
-    margin-top: 15px;
+    margin-top: 30px;
 }
 .story_p{
     font-size: 20px;
@@ -547,13 +691,13 @@ h3{
 }
 
 .my_story_title{
-font-size: 33px;
+font-size: 35px;
 font-weight: 700;
 text-align: left;
 }
 
 .work_p{
-font-size: 22px;
+font-size: 24px;
 color: rgb(255, 255, 255);
 display: inline-block;
 }
@@ -562,20 +706,21 @@ display: inline-block;
     margin-right: 10px;
 }
 .cv_btn{
-    padding: 15px;
-    width: 190px;
+    padding: 9px;
+    width: 230px;
     border-radius: 60px;
     border: 2px solid white ;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 400;
+    margin-top: 10px;
 }
 .cv_btn:hover{
-    padding: 15px;
-    width: 190px;
+    padding: 10px;
+    width: 231px;
     border-radius: 60px;
-    border: 1px solid rgb(0, 0, 0) ;
-    font-size: 18px;
-    font-weight: 600;
+    border: 1px solid rgb(255, 255, 255) ;
+    font-size: 22px;
+    font-weight: 500;
 }
 /*
 PROJECTS TAB
@@ -649,3 +794,64 @@ font-weight: 600;
     }
 }
 
+/*MOBILE LAYOUT
+Creating modal*/
+.modal{
+    position: fixed;
+    top:-25px;
+    right: 170px;
+    width:320px;
+    height: 265px;
+    border-radius: 8px;
+    background-color: #fafafa;
+    position: relative;
+    z-index: -10;
+    display: none;
+}
+
+.margin{
+    margin-left: 24px;
+    padding-top: 20px;
+}
+.m_home,
+.m_about,
+.m_projects{
+color: #111827;
+line-height: 25px;
+font-size: 17px;
+font-weight: 500;
+}
+.m_iksz{
+    position: absolute;
+    color: #111827;
+    right: 0;
+    top: 32px;
+    font-size: 14px;  
+}
+.borderline{
+  width: 260px;
+  margin-left: 17px;
+  border: solid 1px rgb(209, 209, 209);  
+}
+.m_btn{
+    width: 260px;
+    margin-left: 17px;
+    margin-top: 17px;
+    padding: 15px;
+    border-radius: 22px;
+    font-size: 17px;
+    font-weight: 500;
+    border: solid rgb(209, 209, 209);
+    position: relative;
+    background: linear-gradient(-45deg, #EE7752, #76d4bb, #f6cf96,#23D5AB);
+    color: #fff;
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 10s ease-in-out infinite;
+    
+}
+/*Js class*/
+.open-modal {
+    display: block;
+    z-index: 10;
+}

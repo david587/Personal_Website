@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="\style\style.css">
+    <link rel="stylesheet" href="/style\About.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script type="module"  src="\script\About.js"></script>
     <body class="body">
     <section class="header">
@@ -18,14 +20,31 @@
                 </div>
                 <div class="tabs_place">
                     <div class="tabs">
-                        <div class="home"><a href="index.html"><span class="spn_home">Home</span></a></div>
+                        <div class="home"><a href="index.html"><span id="span" class="spn_home">Home</span></a></div>
                         <div class="about"><a href="About.html"><span>About</span></a></div>
                         <div class="projects"><a href="Project.html"><span>Projects</span></a></div>
                     </div>
                 </div>
                 <div class="theme">
                     <div class="btn_div">
-                        <button  data-color="changetheme" id="themebtn" class="theme_btn"><img class="theme_img" src="\profile_pic\theme-icon-29.jpg" alt=""></button>
+                   <button  data-color="changetheme" id="themebtn" class="theme_btn"><img class="theme_img" src="\profile_pic\theme-icon-29.jpg" alt=""></button>
+                   <div><button class="mobile_btn"><i id="bar" class="fa-solid fa-bars"></i></button> 
+                    
+                    <div class="modal">
+                        <div class="margin">
+                            <div class="M_home"><a href="index.html"><span class="m_home">Home</span></a></div>
+                            <div id="x" class="m_iksz"><i class="fa-solid fa-xmark"></i></div>
+                            <div class="M_about"><a href="About.html"><span class="m_about">About</span></a></div>
+                            <div class="M_Projects"><a href="Project.html"> <span class="m_projects">Projects</span></a></div>
+                        </div>
+                    <div class="borderline"></div>
+                    <div class="ThemeBtn">
+                        <button class="m_btn"><i class="fa-solid fa-swatchbook"></i>Change theme</button>
+                    </div>
+                </div>
+                
+                   </div>
+                   
                     </div>
                     </div>
                 </div>
@@ -37,8 +56,8 @@
             <br>
             <p style="
             text-align: center;
-            font-size: 17px;
-            margin-top: 60px;
+            font-size: 18px;
+            margin-top: 10px;
             color: #b67561;
             font-weight: 700;
             ">ABOUT ME</p>
@@ -49,22 +68,25 @@
             <p class="story">Before lorem, I worked as a Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum aliquid voluptas dolor quae quo magni incidunt mollitia ex illum, dolorem blanditiis necessit</p>
             <div class="aboutimg_div">
                 <img  class="aboutimg" src="\profile_pic\123026057_2099008166897023_618249393967907314_n.jpg" alt="">
-                <div>
                <p class="story">In a past life, I was an indie mobile developer making mobile games for iOS and Android, with one of my games outselling Angry Birds.</p>
                 <p class="story">You can find me on Twitter where I share tech-related tidbits and build in public, or you can follow me on GitHub. I often write about my findings on my blog and create cool things over on CodePen. I also help run a mediocre podcast.</p>
             </div>
             </div>
         </div>
         <div class="line">	&#8259;	&#8259;	&#8259;</div>
+        <div class="work_exp">
         <h3 class="my_story_title">Work Experience</h3>
-        <p class="story">Here's a brief rundown of my most recent experiences.</p>
+        <p style="text-align:left;
+        
+        "">Here's a brief rundown of my most recent experiences.</p>
         <div>
-            <p class="work_p">Lorem</p><span class="work_spn">---------------------------------------------------------</span><p class="work_p">Front End Developer
+            <p class="work_p">Lorem</p><span  id="work_spn"class="work_spn">-------------------------------------------------------------------------------------------------</span><p class="work_p">Front End Developer
                 2022 -</p>
         </div>
         <div class="about_btn_div">
             <button class="cv_btn">View my resume</button>
         </div>
+    </div>
     </section>
    
     <div class="line"></div>
@@ -79,3 +101,4 @@
         </div>
     </div>
 </body>
+</html>
