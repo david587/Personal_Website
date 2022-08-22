@@ -18,7 +18,7 @@ html{
         width: 130vh;
         color: #fff;
         background-size: 400% 400%;
-        position: relative;
+        
         animation: change 5s ease-in-out infinite;
     }
 
@@ -27,7 +27,7 @@ html{
     background: linear-gradient(-45deg, #EE7752, #242c56, #40a3e9,#EE7752);
     height: 150vh;
     background-size: 400% 400%;
-    position: relative;
+    /* position: relative; */
     animation: change 15s ease-in-out infinite;
 }
 .header{
@@ -797,16 +797,16 @@ font-weight: 600;
 /*MOBILE LAYOUT
 Creating modal*/
 .modal{
-    position: fixed;
-    top:-25px;
-    right: 170px;
-    width:320px;
-    height: 265px;
+   position: fixed;
+   top: 25px;
+   left: 60px;
+    width:290px; 
+    height: 290px;
     border-radius: 8px;
     background-color: #fafafa;
-    position: relative;
     z-index: -10;
     display: none;
+    /* visibility: hidden; */
 }
 
 .margin{
@@ -821,15 +821,18 @@ line-height: 25px;
 font-size: 17px;
 font-weight: 500;
 }
+.m_home{
+    width: flex;
+}
+
 .m_iksz{
-    position: absolute;
     color: #111827;
-    right: 0;
-    top: 32px;
-    font-size: 14px;  
+    width: flex;
+    font-size: 16px;  
 }
 .borderline{
   width: 260px;
+
   margin-left: 17px;
   border: solid 1px rgb(209, 209, 209);  
 }
@@ -842,16 +845,15 @@ font-weight: 500;
     font-size: 17px;
     font-weight: 500;
     border: solid rgb(209, 209, 209);
-    position: relative;
     background: linear-gradient(-45deg, #EE7752, #76d4bb, #f6cf96,#23D5AB);
     color: #fff;
-    background-size: 400% 400%;
-    position: relative;
+    background-size: 400% 400%; 
     animation: change 10s ease-in-out infinite;
     
 }
 /*Js class*/
 .open-modal {
-    display: block;
+    display: block; 
+    /* visibility: visible; */
     z-index: 10;
 }
