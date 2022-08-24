@@ -1,0 +1,60 @@
+@media (max-width:376px) {
+    * {
+        overflow-x: hidden;
+        overflow-y: auto;
+        margin-left: 0;
+    }
+    .body {
+        max-width: 100%;
+        margin-left: 0;
+        overflow-x: hidden;
+        /* margin-left:10px;
+        margin-right:10px; */
+    }
+    #bar {
+        font-size: 22px;
+        width: 22px;
+        position: absolute;
+        left: 11px;
+        bottom: 10px;
+    }
+    .profile_pic {
+        width: 50px;
+    }
+    .nav {
+        position: relative;
+    }
+    .mobile_btn {
+        position: absolute;
+        right: 0;
+        margin-right: 30px;
+
+    }
+    .Proj_h1 {
+        text-align: center;
+        margin: 0;
+        font-size: 30px;
+    }
+    .Proj_p {
+        text-align: center;
+        font-size: 18px;
+        margin-top: 10px;
+        color: #b67561;
+        font-weight: 700;
+    }
+    .fa-table {
+        visibility: hidden;
+    }
+    .row {
+        margin-top: 60px;
+    }
+    .column {
+        }
+    .title {
+        margin: 0;
+        font-weight: 500;
+    }
+    .row img {
+        margin-bottom: 45px;
+    }
+}

@@ -1,26 +1,75 @@
-@media (max-width:376px){
-    .body{
-        margin-left: 5%;
-        margin-right: 5%;
+@media (max-width:376px) {
+    * {
+        overflow-x: hidden;
+        overflow-y: auto;
+        margin-left: 0;
     }
-    .margin{
-        margin-left: 24px;
-        padding-top: 25px;
+    .body {
+        max-width: 100%;
+        margin-left: 0;
+        overflow-x: hidden;
+        /* margin-left:10px;
+        margin-right:10px; */
     }
-    .m_home,
-    .m_about,
-    .m_projects{
-    color: #111827;
-    line-height: 45px;
-    font-size: 17px;
-    font-weight: 500;
+    #bar {
+        font-size: 22px;
+        width: 22px;
+        position: absolute;
+        left: 11px;
+        bottom: 10px;
     }
+    .profile_pic {
+        width: 50px;
+    }
+    .nav {
+        position: relative;
+    }
+    .mobile_btn {
+        position: absolute;
+        right: 0;
+        margin-right: 30px;
+
+    }
+    .story {
+        text-align: left;
+        margin-left: 10px;
+    }
+    .aboutimg_div {
+        display: inline;
+    }
+    .aboutimg {
+        /* margin-top: 0px;
+        margin-bottom: 10px;
+        width: 80%; */
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 87%;
+        float: none;
+    }
+    .my_story_title {
+        margin-left: 10px;
+    }
+    p {
+        margin-left: 10px;
+    }
+    .cv_btn {
+        width: 340px;
+        margin-left: 16px;
+        margin-top: 70px;
+        margin-bottom: 10px;
+    }
+    .cv_btn:hover {
+        width: 340px;
+        margin-left: 16px;
+        margin-top: 70px;
     }
 
-    .work_exp{
-        margin-left: -20%;
-        margin-right: -20%;
-        margin-top: 50px;
-        margin-bottom: 150px;
-        text-align: left;
+    .work_p {
+        font-size: 20px;
+        display: inline;
     }
+    .line {
+        /* margin-top: 5px; */
+    }
+}
