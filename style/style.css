@@ -18,6 +18,7 @@ html{
         color: #fff;
         background-size: 400% 400%;
         animation: change 5s ease-in-out infinite;
+        scroll-behavior: smooth;
     }
 
 
@@ -88,7 +89,8 @@ a{
 /* text-decoration: none;
 color: rgb(236, 235, 235);
 font-size: 22px;
-font-weight: 500; */
+/* font-weight: 500; */
+font-weight: 500; 
 color: #fff;
 text-decoration: none;
 text-transform: uppercase;
@@ -565,7 +567,7 @@ p{
     font-weight: 600;
 }
 .grid_span{
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600;
 }
 

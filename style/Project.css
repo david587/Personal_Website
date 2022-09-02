@@ -1,4 +1,253 @@
+/*FUll screen*/
+.body{
+    height: 200vh;
+}
+.Proj_h1{
+text-align: center;
+position: relative;
+}
+.Proj_p{
+text-align: center;
+color:#b67561;
+font-size: 1.5rem;
+
+}
+.fa-table{
+    position: absolute;
+    right: -180px;
+    top:50px;
+    font-size: 2rem;
+}
+.title{
+    display: none;
+}
+.column{
+    display: none;
+}
+.grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 200px;
+    margin-top: 160px;
+    margin-bottom: 150px;    
+    align-items: center;
+}
+.grid .el img{
+  max-width: 600px;
+  object-fit:contain;
+}
+.grid .el{
+   width: 300px;
+   font-family: Manrope,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji!important;
+}
+/* .grid .kep{
+    width: 800px;
+} */
+
+.grid p{
+    text-align: left;
+    font-size: 1.4rem;
+    line-height: 30px; 
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.grid .el span{
+    font-size: 2rem;
+    font-weight: 400;
+}
+.grid button{
+    padding: 12px;
+    width: 90%;
+    border-radius: 150px;
+    border: solid 1px transparent;
+    font-size: 1.5rem;
+}
+/*@keyframes rotate {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+.conic {
+  position: relative;
+  z-index: 0;
+  width: 400px;
+  height: 300px;
+  margin: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 2rem;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: -2;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: #1a232a;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-image: conic-gradient(transparent, rgba(168, 239, 255, 1), transparent 30%);
+    animation: rotate 4s linear infinite;
+  }
+  
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 6px;
+    top: 6px;
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
+    background: #000;
+    border-radius: 5px;
+  }
+}*/
+/*Media querys*/
+@media (max-width:1050px) {
+    .grid{
+        display: none;
+    }
+    .column{
+        display: block;
+    }
+    .body{
+        height: 120vh;
+    }
+    .line{
+        display: none;
+    }
+    .fa-table{
+        display: none;
+    }
+}
+
+@media (max-width:1000px) {
+    .grid .el img{
+        max-width: 400px;
+        object-fit:contain;
+      }
+}
+@media (max-width:1100px) {
+    .grid .el img{
+        max-width: 450px;
+        object-fit:contain;
+      }
+      .grid p{
+        font-size: 1.3rem;
+    }
+}
+@media (max-width:1268px) {
+    .grid .el img{
+        max-width: 500px;
+        object-fit:contain;
+      }
+      .fa-table{
+        position: absolute;
+        right:0px;
+        top:10px;
+        font-size: 2rem;
+}
+}
+@media (min-width:1651px) {
+    .grid .el img{
+        max-width: 800px;
+        object-fit:contain;
+      }
+      .el span, p, button{
+        margin-left: 70px;
+      }
+      .Proj_p{
+        margin-left: 0px;
+      }
+      .grid .el{
+        width: 500px;
+        }
+        .grid p{
+            font-size: 1.6rem;
+        }
+        .grid button{
+            width: 80%;
+    }
+    .name p{
+        margin-left: 0px;
+    }
+}
+@media (min-width:1850px) {
+    .grid .el img{
+        max-width: 900px;
+        object-fit:contain;
+      }
+      .el span, p, button{
+        margin-left: 50px;
+      }
+      .grid .el{
+        width: 500px;
+        }
+        grid p{
+            font-size: 1.7rem;
+        }
+    .grid button{
+            width: 80%;
+    }
+}
+@media (min-width:1950px) {
+    .grid .el img{
+        max-width: 850px;
+        object-fit:contain;
+      }
+}
+@media (min-width:2000px) {
+    .grid .el img{
+        max-width: 870px;
+        object-fit:contain;
+      }
+      .grid .el span{
+        margin-left: 80px;
+        /* max-width: 70%; */
+      }
+      .grid .el p{
+        margin-left: 80px;
+        /* max-width: 70%; */
+      }
+      .grid .el button{
+        margin-left: 80px;
+        /* max-width: 70%; */
+      }
+      .grid .el{
+        width: 700px;
+        }
+        .grid span{
+            font-size: 4rem;
+        }
+        .grid p{
+            font-size: 2.5rem;
+            line-height: 45px;
+        }
+    .grid button{
+            width: 80%;
+    }
+}
+
+
+/*Iphone se*/
 @media (max-width:376px) {
+    .grid{
+        display: none;
+    }
+    .Proj_h1{
+        text-align: center;
+        position:unset;
+        }
+    .title{
+        display: inline;
+    }
+    .column{
+        display: inline;
+    }
     * {
         overflow-x: hidden;
         overflow-y: auto;
@@ -53,6 +302,7 @@
     .title {
         margin: 0;
         font-weight: 500;
+        color: white;
     }
     .row img {
         margin-bottom: 45px;

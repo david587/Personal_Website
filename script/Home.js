@@ -11,9 +11,23 @@ localValue();
 export function getElement() {
     //elements
     const themeBtn = document.getElementById("themebtn");
+//     const Modalbtn = document.getElementById("modal_btn");
+//     const body = document.getElementsByClassName("body");
+// // function modalBtn(){
+    
+//     Modalbtn.addEventListener("click", change());
+//     // };
+//     function change(){
+//         let getTheme = JSON.parse(localStorage.getItem("PageTheme"));
+//         if(getTheme==="BLUE"){
+//             body.classList.toggle("changetheme");
+//         }
+//        };
+   
     //events
     themeBtn.addEventListener("click", changetheme);
-}
+};
+
 export function changetheme() {
     let settheme = document.body;
     settheme
@@ -23,7 +37,7 @@ export function changetheme() {
     var theme;
 
     if (settheme.classList.contains("changetheme")) {
-        console.log("blue");
+        console.log("BLUE");
         theme = "BLUE";
     } else {
         console.log("NORMAL");
@@ -40,8 +54,8 @@ export function getLocalTheme() {
             .body
             .classList
             .toggle("changetheme")
-    };
-}
+        };
+};
 
 // -------------------------------------------------------------
 
