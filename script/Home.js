@@ -11,21 +11,10 @@ localValue();
 export function getElement() {
     //elements
     const themeBtn = document.getElementById("themebtn");
-//     const Modalbtn = document.getElementById("modal_btn");
-//     const body = document.getElementsByClassName("body");
-// // function modalBtn(){
-    
-//     Modalbtn.addEventListener("click", change());
-//     // };
-//     function change(){
-//         let getTheme = JSON.parse(localStorage.getItem("PageTheme"));
-//         if(getTheme==="BLUE"){
-//             body.classList.toggle("changetheme");
-//         }
-//        };
-   
+    const Modalbtn = document.getElementById("modal_btn");
     //events
     themeBtn.addEventListener("click", changetheme);
+    Modalbtn.addEventListener("click", change);
 };
 
 export function changetheme() {
@@ -46,6 +35,29 @@ export function changetheme() {
     //set localstorage
     localStorage.setItem("PageTheme", JSON.stringify(theme));
 };
+
+    function change(){
+        const Modalbtn = document.getElementById("modal_btn");
+        let getTheme = JSON.parse(localStorage.getItem("PageTheme"));
+        if(getTheme==="BLUE"){
+            var theme="NORMAL";
+            document.body.classList.toggle("changetheme");
+            localStorage.setItem("PageTheme", JSON.stringify(theme)); 
+
+                Modalbtn.classList.remove("m_btn");
+                Modalbtn.classList.add("modalbtn");
+                   
+        }
+        else if(getTheme==="NORMAL"){
+            var theme="BLUE";
+            const Modalbtn = document.getElementById("modal_btn");
+            document.body.classList.toggle("changetheme");
+            localStorage.setItem("PageTheme", JSON.stringify(theme));
+                Modalbtn.classList.remove("modalbtn");
+                Modalbtn.classList.add("m_btn");
+               
+            }
+    };
 export function getLocalTheme() {
     //get theme locale
     let getTheme = JSON.parse(localStorage.getItem("PageTheme"));

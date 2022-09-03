@@ -29,6 +29,21 @@ html{
     /* position: relative; */
     animation: change 15s ease-in-out infinite;
 }
+.modalbtn{
+    background: linear-gradient(-45deg, #EE7752, #242c56, #40a3e9,#EE7752);
+    width: 260px;
+    margin-left: 17px;
+    margin-top: 17px;
+    padding: 15px;
+    border-radius: 22px;
+    font-size: 17px;
+    font-weight: 500;
+    border: solid rgb(209, 209, 209);
+    color: #fff;
+    background-size: 400% 400%; 
+    animation: change 10s ease-in-out infinite;
+    position: relative;
+}
 .header{
    
 }
