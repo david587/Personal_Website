@@ -1,8 +1,9 @@
+
 //Theme
 barButton();
 getElement();
 getLocalTheme();
-
+// modaltheme();
 //Input data
 getElementMsg();
 localValue();
@@ -12,6 +13,7 @@ export function getElement() {
     //elements
     const themeBtn = document.getElementById("themebtn");
     const Modalbtn = document.getElementById("modal_btn");
+    
     //events
     themeBtn.addEventListener("click", changetheme);
     Modalbtn.addEventListener("click", change);
@@ -22,13 +24,13 @@ export function changetheme() {
     settheme
         .classList
         .toggle("changetheme");
-
     var theme;
 
     if (settheme.classList.contains("changetheme")) {
         console.log("BLUE");
         theme = "BLUE";
-    } else {
+    }
+    else {
         console.log("NORMAL");
         theme = "NORMAL";
     }
@@ -37,36 +39,59 @@ export function changetheme() {
 };
 
     function change(){
-        const Modalbtn = document.getElementById("modal_btn");
         let getTheme = JSON.parse(localStorage.getItem("PageTheme"));
+        const Modalbtn = document.getElementById("modal_btn");
         if(getTheme==="BLUE"){
             var theme="NORMAL";
+            var modal;
             document.body.classList.toggle("changetheme");
+            Modalbtn.classList.remove("m_btn");
+            Modalbtn.classList.add("modalbtn");
+            if (Modalbtn.classList.contains("modalbtn")){
+                modal ="blue"
+            } 
+            else{
+                modal ="normal"
+            }
+            localStorage.setItem("modaltheme", JSON.stringify(modal));
             localStorage.setItem("PageTheme", JSON.stringify(theme)); 
-
-                Modalbtn.classList.remove("m_btn");
-                Modalbtn.classList.add("modalbtn");
-                   
+            
         }
         else if(getTheme==="NORMAL"){
             var theme="BLUE";
-            const Modalbtn = document.getElementById("modal_btn");
             document.body.classList.toggle("changetheme");
-            localStorage.setItem("PageTheme", JSON.stringify(theme));
-                Modalbtn.classList.remove("modalbtn");
-                Modalbtn.classList.add("m_btn");
-               
+            Modalbtn.classList.remove("modalbtn");
+            Modalbtn.classList.add("m_btn");
+            if (Modalbtn.classList.contains("m_btn")){
+                modal ="normal"
+            } 
+            else{
+                modal ="blue"
             }
+            localStorage.setItem("modaltheme", JSON.stringify(modal));
+            localStorage.setItem("PageTheme", JSON.stringify(theme));
+            }
+        // if(document.body.classList.contains("changetheme")){
+        //     Modalbtn.classList.remove("m_btn");
+        //     Modalbtn.classList.add("modalbtn");
+        // }
     };
 export function getLocalTheme() {
+    const Modalbtn = document.getElementById("modal_btn");
     //get theme locale
     let getTheme = JSON.parse(localStorage.getItem("PageTheme"));
-    if (getTheme === "BLUE") {
+    let getmodal = JSON.parse(localStorage.getItem("modaltheme"));
+    if (getTheme === "BLUE" ) {
         document
             .body
             .classList
-            .toggle("changetheme")
-        };
+            .toggle("changetheme");
+        }
+    else if(getmodal ==="blue"){
+        Modalbtn.classList.add("modalbtn");
+            Modalbtn.classList.remove("m_btn");
+    }
+       
 };
 
 // -------------------------------------------------------------
@@ -122,5 +147,4 @@ function barButton() {
             .classList
             .toggle("open-modal");
     }
-}
-// }
+    };
