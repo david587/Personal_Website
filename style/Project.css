@@ -58,11 +58,27 @@ font-size: 1.5rem;
 }
 .grid button{
     padding: 12px;
+    position: relative;
     width: 90%;
     border-radius: 150px;
     border: solid 1px transparent;
     font-size: 1.5rem;
 }
+.fa-github{
+    position: absolute;
+    font-size: 2.5rem;
+    top:9px;
+    right: 10px;
+}
+.grid button:hover{
+   color: #fff;
+   background-color: rgb(14, 14, 14);
+   border: solid 3px white;
+}
+.fa-github:hover{
+    color: #fff;
+}
+
 /*@keyframes rotate {
   100% {
     transform: rotate(1turn);
