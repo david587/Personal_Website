@@ -44,9 +44,7 @@ html{
     animation: change 10s ease-in-out infinite;
     position: relative;
 }
-.header{
-   
-}
+
 @keyframes change{
     0%{
         background-position: 0 50%;
@@ -73,9 +71,7 @@ width: 120px;
 
 }
 
-.profile_div{
 
-}
 
 .profile_pic{
 width: 50px;
@@ -135,12 +131,10 @@ a::before{
 
 .about{
 flex:1;
-
 padding: 6px;
 }
 .projects{
 flex: 1;
-
 padding: 6px;
 }
 
@@ -384,6 +378,7 @@ p{
 .borderline{
     width: 90%;
 }
+}
 @media(max-width:800px){
     .grid_projects {
         grid-template-columns: 1fr;
@@ -580,7 +575,7 @@ p{
         .changetheme{
             margin-left: 0;
         }
-        .modal{
+        /* .modal{
             position: fixed;
             top: 25px;
             left: 60px;
@@ -592,7 +587,7 @@ p{
         .m_projects{
         color: #111827;
         /* line-height: 10px; */
-        font-size: 16px;
+        /* font-size: 16px;
         font-weight: 500;
         margin-bottom: 0;
         text-decoration: none;
@@ -608,7 +603,7 @@ p{
             width: 260px;
             margin-left: 17px;
             border: solid 1px rgb(209, 209, 209);  
-          }
+          } */ 
        }
    
 .grid_top{
@@ -914,7 +909,7 @@ Creating modal*/
 .m_projects{
 color: #111827;
 /* line-height: 10px; */
-/* font-size: 16px;
+font-size: 16px;
 font-weight: 500;
 margin-bottom: 0;
 text-decoration: none;
@@ -924,7 +919,7 @@ position: relative;
 padding: 18px;
 margin: 2px;
 transition: color 1s;
-overflow:hidden; */
+overflow:hidden;
 }
 .m_projects{
     margin-bottom: 10px;
@@ -964,5 +959,4 @@ overflow:hidden; */
     display: block; 
     /* visibility: visible; */
     z-index: 10;
-}
 }
