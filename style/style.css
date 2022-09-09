@@ -32,7 +32,7 @@ html{
 .modalbtn{
     background: linear-gradient(-45deg, #EE7752, #242c56, #40a3e9,#EE7752);
     width: 260px;
-    margin-left: 17px;
+    /* margin-left: 17px; */
     margin-top: 17px;
     padding: 15px;
     border-radius: 22px;
@@ -349,16 +349,15 @@ p{
     .theme_btn{
         display: none;
     }
-    .modal{
+    /* .modal{
         width: 80vh;
         height: 37vh;
         
-    }
-    .m_home,
+    } */
+    /* .m_home,
     .m_about,
     .m_projects{
     color: #111827;
-    /* line-height: 10px; */
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 0;
@@ -369,15 +368,10 @@ p{
     padding: 18px;
     margin: 2px;
     transition: color 1s;
-    
     overflow:hidden;
     width: 100%;
     /* text-align: center;
 } */
-}
-.borderline{
-    width: 90%;
-}
 }
 @media(max-width:800px){
     .grid_projects {
@@ -515,6 +509,9 @@ p{
         .me{
             padding-left: 1px;
         }
+        .btn{
+            margin-left:0px;
+         }
         .button_me{
             width: 340px;
             height: 60px;
@@ -575,35 +572,6 @@ p{
         .changetheme{
             margin-left: 0;
         }
-        /* .modal{
-            position: fixed;
-            top: 25px;
-            left: 60px;
-             width:300px; 
-             height: 305px;
-        }
-        .m_home,
-        .m_about,
-        .m_projects{
-        color: #111827;
-        /* line-height: 10px; */
-        /* font-size: 16px;
-        font-weight: 500;
-        margin-bottom: 0;
-        text-decoration: none;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        position: relative;
-        padding: 18px;
-        margin: 2px;
-        transition: color 1s;
-        overflow:hidden;
-        }
-        .borderline{
-            width: 260px;
-            margin-left: 17px;
-            border: solid 1px rgb(209, 209, 209);  
-          } */ 
        }
    
 .grid_top{
@@ -891,8 +859,8 @@ Creating modal*/
    position: fixed;
    top: 25px;
    left: 60px;
-    /* width:300px; 
-    height: 305px; */
+    width: 300px;
+    height: 300px;
     border-radius: 8px;
     background-color: #fafafa;
     z-index: -10;
@@ -908,7 +876,6 @@ Creating modal*/
 .m_about,
 .m_projects{
 color: #111827;
-/* line-height: 10px; */
 font-size: 16px;
 font-weight: 500;
 margin-bottom: 0;
@@ -926,12 +893,11 @@ overflow:hidden;
 }
 .m_iksz{
     color: #111827;
-    display: inline-block;
+    display: block;
     font-size: 17px;  
 }
 .borderline{
-  /* width: 260px;
-  margin-left: 17px; */
+    margin-left: 17px;
   border: solid 1px rgb(209, 209, 209);  
 }
 .m_btn{
