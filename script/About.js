@@ -29,13 +29,12 @@ function openResume(){
 
 function media(){
     const line = document.getElementById("work_spn");
-    window.innerWidth<376
-    ?(line.textContent="->")
-    :(line.innerHTML="-------------------------------------------------------------------------------------------------");
-
-    // window.innerWidth>400 &&  window.innerWidth<500
-    // ?(line.innerHTML="---")
-    // :(line.innerHTML="--------------------------");
+    if(window.innerWidth<1000){
+        line.innerHTML ="->"
+    }   
+    else if(window.innerWidth>1000){
+        line.innerHTML ="---------------------------------------------->"
+    }
 };
 
 

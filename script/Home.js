@@ -7,6 +7,8 @@ getLocalTheme();
 //Input data
 getElementMsg();
 localValue();
+// label();
+
 
 //functions
 export function getElement() {
@@ -148,3 +150,16 @@ function barButton() {
             .toggle("open-modal");
     }
     };
+
+// function label(){
+//     document.querySelectorAll(".text-input").forEach((Element)=>{
+//         Element.addEventListener("blur", (event)=>{
+//             if(event.target.value= ""){
+//                 event.target.nextElementSibling.classList.add("filled"); 
+//             }
+//             else{
+//                 event.target.nextElementSibling.classList.remove("filled");
+//             }
+//         })
+//     })
+//     };
