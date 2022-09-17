@@ -561,6 +561,9 @@ p{
           max-width: 304px;
          
         }
+       .Msg_div button{
+        margin-bottom: 20px;
+       }
         .name{
             width: 350px;    
         }
@@ -719,7 +722,70 @@ form {
 width: 200px;
 margin-top: 10px;
 }
+/*Contact me part*/
+.Msg_div{
+    height: 70vh; 
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+     display: grid; 
+     justify-content: center;
+     /* margin-left: -100%;
+    margin-right: -100%;  */
+     /* background-color: #9e9d9d; */
+}
 
+.Contact{
+    text-align: left;
+    font-size: 3.1rem;
+    margin-bottom: 12px;
+   
+}
+.Msg_div span{
+    text-decoration: underline 4px #EE7752 ;
+}
+
+p{
+    font-size: 1.2rem;
+}
+.Msg_div input{
+    width: 110%;
+    height: 50px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: transparent;
+    border-bottom: 3px solid rgb(216, 216, 216);
+    font-weight: 400;
+}
+.Msg_div input:focus, input:focus{
+    outline: none;
+    border-bottom: 3px solid #EE7752;
+    color: white;
+    font-size: 20px;
+}
+
+.Msg_div input::placeholder{
+   color: #fff;
+   font-size: 14px;
+}
+
+.Msg_div button{
+    margin-top: 5px;
+    width: 110%;
+    height: 50px;
+    font-size: 1rem;
+    font-family: 500;
+    background-color: rgb(241, 240, 240);
+    border: transparent;
+   border-radius: 2px;
+}
+.Msg_div button:hover{
+   background-color: rgb(221, 219, 219);
+   font-weight: 500;
+}
 
 .social{
 margin-top: 25px;
@@ -746,6 +812,8 @@ width: 200px;
 .linkedin:hover{
     width:40px;
 }
+
+
 /*About css*/
 h3{
     font-size: 39px;
