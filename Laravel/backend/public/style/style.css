@@ -423,19 +423,21 @@ p{
     font-size: 1.2rem;
 }
 .Msg_div input{
-    width: 110%;
+    width: 100%;
     height: 50px;
     margin-bottom: 20px;
     background-color: transparent;
     border: transparent;
     border-bottom: 3px solid rgb(216, 216, 216);
     font-weight: 400;
+    font-size: 20px;
+    color: white;
 }
 .Msg_div input:focus, input:focus{
     outline: none;
     border-bottom: 3px solid #EE7752;
-    color: white;
-    font-size: 20px;
+    
+    
 }
 
 .Msg_div input::placeholder{
@@ -446,7 +448,7 @@ p{
 .Msg_div button{
     font-family: 'Roboto', sans-serif;
     margin-top: 5px;
-    width: 110%;
+    width: 100%;
     height: 50px;
     font-size: 1rem;
     font-family: 500;
