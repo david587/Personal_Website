@@ -5,7 +5,8 @@
         <title>Baráth Dávid</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/style/style.css">
+        
+        <link rel="stylesheet" type="text/css" href="style\style.css">
 
         <link
             rel="stylesheet"
@@ -26,7 +27,7 @@
                         <div class="profile_div">
                             <img
                                 class="profile_pic"
-                                src="\profile_pic\123026057_2099008166897023_618249393967907314_n.jpg"
+                                src="profile_pic\123026057_2099008166897023_618249393967907314_n.jpg"
                                 alt="">
                         </div>
                     </div>
@@ -147,16 +148,19 @@
             <span class="grid_span">May 03,2022</span>
         </div>
     </div>
-    <div class="line"></div>
+    
     <div class="Msg_div">
+    <form method="POST" action="{{route('contact.send')}}" enctype="multipart/form-data">
+        @csrf
     <div class="Color"></div>
         <p class="Contact"><span>Contact M</span>e</p>
         <p>Fell free to send me a private message :)</p>
-        <input type="text" placeholder="Name">
-        <input type="text" placeholder="Email">
-        <input type="text" placeholder="Message">
-        <button>SEND</button>
+        <input name="name" type="text" placeholder="Name">
+        <input name="email" type="text" placeholder="Email">
+        <input name="message" type="text" placeholder="Message">
+        <button type="submit">SEND</button>
     </div>
+    </form>
     <div class="line">
         &#8259; &#8259; &#8259;</div>
     
