@@ -2,11 +2,11 @@
 //Theme
 barButton();
 getElement();
+checkform();    
 getLocalTheme();
 // modaltheme();
 //Input data
 getElementMsg();
-localValue();
 // label();
 
 
@@ -15,10 +15,12 @@ export function getElement() {
     //elements
     const themeBtn = document.getElementById("themebtn");
     const Modalbtn = document.getElementById("modal_btn");
+    // const formBtn = document.getElementById("form_button");
     
     //events
     themeBtn.addEventListener("click", changetheme);
     Modalbtn.addEventListener("click", change);
+    // formBtn.addEventListener("click",checkform);
 };
 
 export function changetheme() {
@@ -120,13 +122,6 @@ function takeMsg() {
     localStorage.setItem("InputValue", JSON.stringify(items));
 };
 
-function localValue() {
-    //get input value from local
-    let getInput = JSON.parse(localStorage.getItem("InputValue"));
-    if (getInput.length > 5) {
-        localStorage.removeItem("InputValue");
-    }
-};
 
 function barButton() {
     // if(document.classList.contains("bar")){
@@ -151,15 +146,16 @@ function barButton() {
     }
     };
 
-// function label(){
-//     document.querySelectorAll(".text-input").forEach((Element)=>{
-//         Element.addEventListener("blur", (event)=>{
-//             if(event.target.value= ""){
-//                 event.target.nextElementSibling.classList.add("filled"); 
-//             }
-//             else{
-//                 event.target.nextElementSibling.classList.remove("filled");
-//             }
-//         })
-//     })
+//-----------------------------------------
+//Form requirements
+// function checkform(){
+//     const inputs = document.querySelectorAll(".input_div");
+//     inputs.forEach(element => {
+//         if(element.value=" "){
+//             element.placeholder = " Required field";
+//         }
+//         else if(element.value.length>5){
+//             console.log(">5");
+//         }
+//         });
 //     };

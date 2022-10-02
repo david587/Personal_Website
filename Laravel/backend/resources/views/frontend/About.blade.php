@@ -5,8 +5,8 @@
         <title>Baráth Dávid</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="\style\style.css">
-        <link rel="stylesheet" href="/style\About.css">
+        <link rel="stylesheet" type="text/css" href="style\style.css">
+        <link rel="stylesheet" type="text/css" href="style\About.css">
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -29,15 +29,15 @@
                         <div class="tabs_place">
                             <div class="tabs">
                                 <div class="home">
-                                    <a href="index.html">
+                                    <a href="/index">
                                         <span id="span" class="spn_home">Home</span></a>
                                 </div>
                                 <div class="about">
-                                    <a href="About.html">
+                                    <a href="/about">
                                         <span>About</span></a>
                                 </div>
                                 <div class="projects">
-                                    <a href="Project.html">
+                                    <a href="/project">
                                         <span>Projects</span></a>
                                 </div>
                             </div>
@@ -56,7 +56,7 @@
                                 <div class="margin">
                                     <div>
                                         <div class="M_home">
-                                            <a href="index.html">
+                                            <a href="/index">
                                                 <p class="m_home">Home</p>
                                             </a>
                                         </div>
@@ -65,12 +65,12 @@
                                         </div>
                                     </div>
                                     <div class="M_about">
-                                        <a href="About.html">
+                                        <a href="/about">
                                             <p class="m_about">About</p>
                                         </a>
                                     </div>
                                     <div class="M_Projects">
-                                        <a href="Project.html">
+                                        <a href="/project">
                                             <p class="m_projects">Projects</p>
                                         </a>
                                     </div>

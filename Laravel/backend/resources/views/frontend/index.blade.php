@@ -34,15 +34,15 @@
                     <div class="tabs_place">
                         <div class="tabs">
                             <div class="home">
-                                <a href="index.html">
+                                <a href="/index">
                                     <span id="span" class="spn_home">Home</span></a>
                             </div>
                             <div class="about">
-                                <a href="About.html">
+                                <a href="/about">
                                     <span>About</span></a>
                             </div>
                             <div class="projects">
-                                <a href="Project.html">
+                                <a href="/project">
                                     <span>Projects</span></a>
                             </div>
                         </div>
@@ -61,7 +61,7 @@
                             <div class="margin">
                                 
                                     <div class="M_home">
-                                        <a href="index.html">
+                                        <a href="/index">
                                             <p class="m_home">Home</p>
                                         </a>
                                     </div>
@@ -70,12 +70,12 @@
                                     </div>
                                 
                                 <div class="M_about">
-                                    <a href="About.html">
+                                    <a href="/about">
                                         <p class="m_about">About</p>
                                     </a>
                                 </div>
                                 <div class="M_Projects">
-                                    <a href="Project.html">
+                                    <a href="/project">
                                         <p class="m_projects">Projects</p>
                                     </a>
                                 </div>
@@ -122,7 +122,7 @@
     <div class="grid_projects">
         <div class="grid_top">
             <img
-                onclick="location.href='Project.html'"
+                onclick="location.href='/project'"
                 class="grid_img"
                 src="\project_thumbnail\Screenshot_2019-05-08 JavaScript Event(1).png"
                 alt="">
@@ -131,7 +131,7 @@
         </div>
         <div class="grid_mid">
             <img
-                onclick="location.href='Project.html'"
+                onclick="location.href='/project'"
                 class="grid_img"
                 src="\project_thumbnail\tic-tac-toe-5.png"
                 alt="">
@@ -141,7 +141,7 @@
         <div class="grid_bot">
             <img
                 class="grid_img"
-                onclick="location.href='Project.html'"
+                onclick="location.href='/project'"
                 src="\project_thumbnail\todo.png"
                 alt="">
             <p class="grid_p">To do App</p>
@@ -155,10 +155,12 @@
     <div class="Color"></div>
         <p class="Contact"><span>Contact M</span>e</p>
         <p>Fell free to send me a private message :)</p>
-        <input name="name" type="text" placeholder="Name">
-        <input name="email" type="text" placeholder="Email">
-        <input name="message" type="text" placeholder="Message">
-        <button type="submit">SEND</button>
+        <div class="input_div">
+        <input  id="name" name="name" type="text" placeholder="Name">
+        <input id="email"name="email" type="text" placeholder="Email">
+        <input id="message" name="message" type="text" placeholder="Message">
+        </div>
+        <button id="form_button" type="submit">SEND</button>
     </div>
     </form>
     <div class="line">
@@ -185,15 +187,14 @@
         <div class="name">
             <p>© 2022 Baráth Dávid</p>
         </div>
-        <div class="social">
-            <div><img class="git" src="\social\25231.png" alt=""></div>
-            <div><img class="facebook" src="\social\Facebook_f_logo_(2019).svg.png" alt=""></div>
-            <div><img
-                class="linkedin"
-                src="\social\Linkedin-logo-on-transparent-Background-PNG-.png"
-                alt=""></div>
+         
+                <div class="social"><img class="git" src="\social\25231.png" alt=""></div>
+                <div class="social"><img class="facebook" src="\social\Facebook_f_logo_(2019).svg.png" alt=""></div>
+                <div class="social"><img
+                    class="linkedin"
+                    src="\social\Linkedin-logo-on-transparent-Background-PNG-.png"
+                    alt=""></div>
         </div>
-
     </div>
 
 </section>

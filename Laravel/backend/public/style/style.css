@@ -394,7 +394,8 @@ font-weight: 500;
 
 /*Contact me part*/
 .Msg_div{
-    height: 60vh; 
+    max-width: 95%;
+    height: 50vh; 
     background: rgba(255, 255, 255, 0.2);
     border-radius: 16px ;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -404,6 +405,7 @@ font-weight: 500;
      display: grid; 
      justify-content: center;
      margin-top: 80px;
+     padding-left: 40px;
      /* margin-left: -100%;
     margin-right: -100%;  */
      /* background-color: #9e9d9d; */
@@ -416,14 +418,19 @@ font-weight: 500;
    
 }
 .Msg_div span{
-    text-decoration: underline 4px #EE7752 ;
+    text-decoration: underline 4px ;
+}
+.Msg_div span:hover{
+    text-decoration: underline 4px  #EE7752;
+    text-shadow: 12px 10px 20px #ee7752;
+
 }
 
 p{
     font-size: 1.2rem;
 }
 .Msg_div input{
-    width: 100%;
+    width: 90%;
     height: 50px;
     margin-bottom: 20px;
     background-color: transparent;
@@ -448,7 +455,8 @@ p{
 .Msg_div button{
     font-family: 'Roboto', sans-serif;
     margin-top: 5px;
-    width: 100%;
+    width: 90%;
+    margin-left: 20px;
     height: 50px;
     font-size: 1rem;
     font-family: 500;
@@ -464,27 +472,41 @@ p{
    background-color: #EE7752;
 }
 
+.bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:flex-end;
+}
+.name{
+ display: flex;
+ width: 30%;
+ margin-bottom: 35px;
+}
+.name p{
+   font-size: 26px;
+}
+
 .social{
 margin-top: 25px;
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-width: 200px;
+display: flex;
+padding: 60px;
 }
 .git{
-    width: 30px;
+    width: 50px;
 }
 .git:hover{
     width: 40px;
 }
 .facebook{
-    width:30px;
+    width:50px;
 }
 .facebook:hover{
     width:40px;
 }
 
 .linkedin{
-    width:30px;
+    width:50px;
 }
 .linkedin:hover{
     width:40px;
@@ -667,19 +689,73 @@ Creating modal*/
  
   
   /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 860px) {
     .column {
       flex: 50%;
       max-width: 50%;
     }
+    .name p{
+       font-size: 19px;
+       margin-top: 90px;
+    }
+    .social{
+    margin-top: 25px;
+    display: flex;
+    width: flex;
+    padding: 60px;
+    }
+    .git{
+        width: 40px;
+    }
+    .facebook{
+        width:40px;
+    }
+    .linkedin{
+        width:40px;
+    }  
   }
-  
+  @media screen and (max-width: 700px) {
+    .name p{
+        font-size: 18px;
+        margin-top: 90px;
+     }
+     .name{
+        display: flex;
+        width: 50%;
+       }
+  }
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
     .column {
       flex: 100%;
       max-width: 100%;
     }
+    .name p{
+        font-size: 15px;
+        margin-top: 90px;
+     }
+     .name{
+        display: flex;
+        width: 40%;
+       }
+     .social{
+     margin-top: 25px;
+     display: flex;
+     width: flex;
+     padding: 20px;
+     }
+     .git{
+         width: 30px;
+         height: 30px;
+     }
+     .facebook{
+        width: 30px;
+        height: 30px;
+     }
+     .linkedin{
+        width: 30px;
+        height: 30px;
+     }  
   }
 
   /*Project page responsive grid*/
@@ -956,6 +1032,8 @@ Creating modal*/
             width: 350px;
         }
         .Msg_div {
+            padding-left: 0;
+            margin-left: 10px;
             border-radius: 1px;
             height: 70vh;
         }
