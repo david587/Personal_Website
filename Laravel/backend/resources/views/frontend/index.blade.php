@@ -187,13 +187,22 @@
         <div class="name">
             <p>© 2022 Baráth Dávid</p>
         </div>
-         
+         <div class="social_div">
                 <div class="social"><img class="git" src="\social\25231.png" alt=""></div>
                 <div class="social"><img class="facebook" src="\social\Facebook_f_logo_(2019).svg.png" alt=""></div>
                 <div class="social"><img
                     class="linkedin"
                     src="\social\Linkedin-logo-on-transparent-Background-PNG-.png"
                     alt=""></div>
+        </div>
+
+        
+            <div class="social_large"><img class="git" src="\social\25231.png" alt=""></div>
+            <div class="social_large"><img class="facebook" src="\social\Facebook_f_logo_(2019).svg.png" alt=""></div>
+            <div class="social_large"><img
+                class="linkedin"
+                src="\social\Linkedin-logo-on-transparent-Background-PNG-.png"
+                alt=""></div>
         </div>
     </div>
 

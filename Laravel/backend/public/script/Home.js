@@ -1,8 +1,7 @@
 
 //Theme
 barButton();
-getElement();
-checkform();    
+getElement();    
 getLocalTheme();
 // modaltheme();
 //Input data

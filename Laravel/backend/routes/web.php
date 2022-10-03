@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\FormController;
 use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
 
@@ -26,3 +27,4 @@ Route::post("/send-message",[ContactController::class,"sendEmail"])->name("conta
 Route::get("/index",[PageController::class,"index"]);
 Route::get("/about",[PageController::class,"about"]);
 Route::get("/project",[PageController::class,"project"]);
+// Route::post("{{route('contact.send')}}",)
