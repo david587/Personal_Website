@@ -90,13 +90,14 @@
     </section>
     <h1 class="Proj_h1">My projects
     </h1>
-    <p class="Proj_p">Lorem, ipsum.</p>
+    <p class="Proj_p">few projects</p>
     
         <div class="grid">
             <div class="el">
                 <span>Restaurant menu</span>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia natus autem
                     quas consequuntur fugiat sapiente.</p>
+                    <p>2022 July 14</p>
                 <button onclick="window.open('https://github.com/david587/Js_Projects/tree/master/menu')">View <i class="fa-brands fa-github"></i></button>
             </div>
             <div class="el"><img src="\projects_grid\Képernyőkép 2022-07-26 222621.png"></div>
@@ -104,6 +105,7 @@
                 <span>Grocery List</span>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia natus autem
                     quas consequuntur fugiat sapiente.</p>
+                    <p>2022 July 14</p>
                 <button onclick="window.open('https://github.com/david587/Js_Projects/tree/master/todo')">View <i class="fa-brands fa-github"></i></button>
             </div>
             <div class="el"><img src="\projects_grid\Képernyőkép 2022-07-26 223127.png"></div>
@@ -111,6 +113,7 @@
                 <span>Simple Calculator</span>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia natus autem
                     quas consequuntur fugiat sapiente.</p>
+                    <p>2022 July 14</p>
                 <button onclick="window.open('https://github.com/david587/Js_Calculator')">View <i class="fa-brands fa-github"></i></button>
             </div>
             <div class="el">
@@ -119,6 +122,7 @@
                 <span>Countdown</span>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia natus autem
                     quas consequuntur fugiat sapiente.</p>
+                    <p>2022 July 14</p>
                 <button onclick="window.open('https://github.com/david587/Js_Projects/tree/master/countdown-timer')">View <i class="fa-brands fa-github"></i></button>
             </div>
             <div class="el"><img src="\projects_grid\Képernyőkép 2022-07-26 222725.png"></div>

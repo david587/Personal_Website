@@ -135,8 +135,8 @@
                 class="grid_img"
                 src="\project_thumbnail\tic-tac-toe-5.png"
                 alt="">
-            <p class="grid_p">Tic Tac Toe</p>
-            <span class="grid_span">Jun 14,2022</span>
+            <p class="grid_p">Workpost Management</p>
+            <span class="grid_span">okt 12,2022</span>
         </div>
         <div class="grid_bot">
             <img
@@ -166,22 +166,7 @@
     <div class="line">
         &#8259; &#8259; &#8259;</div>
     
-    <!-- <fieldset>
-        <p class="grid_p">Send me a private message</p>
-        <div class="input-container">
-        <input class="text-input" type="text" placeholder="Enter your Firstname" required id="firstname" autocomplete="off">
-            
-        <input class="text-input" type="text" placeholder="Enter your Lastname"  required id="lastname" autocomplete="off">
-       
-        </div>
-        </span>
-        <div class="line2"></div>
-        <form>
-            <input id="input" class="spam" type="text" placeholder="Hi! :)">
-            <button id="send" class="send_btn">Send</button>
-        </form>
-        <div class="line3"></div>
-    </fieldset> -->
+    
     <div class="line2"></div>
     <div class="bottom">
         <div class="name">

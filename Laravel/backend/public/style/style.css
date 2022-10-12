@@ -14,7 +14,7 @@ html{
         /* margin-left: 10%;
         margin-right: 10%; */
         background: linear-gradient(-45deg, #EE7752, #76d4bb, #f6cf96,#23D5AB);
-        height: 150vh;
+        height: 100%;
         color: #fff;
         background-size: 400% 400%;
         animation: change 5s ease-in-out infinite;
@@ -395,7 +395,7 @@ font-weight: 500;
 /*Contact me part*/
 .Msg_div{
     max-width: 95%;
-    height: 40vh; 
+    height: 90vh; 
     background: rgba(255, 255, 255, 0.2);
     border-radius: 16px ;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -874,12 +874,13 @@ Creating modal*/
      margin-left: 5%;
      margin-right: 5%;
     }
-    }
-    @media (max-width:650px){
-       .button_me{
+
+    @media (min-width:860px){
+       .social_large img{
+        width: 40px;
        }
-        }
-        
+    
+    }   
     @media (min-width:400px){
         body{
          margin-left: 8%;
@@ -926,9 +927,6 @@ Creating modal*/
             background-size: 400% 400%;
             position: relative;
            }
-
-           .mobile_btn{
-           }
             }
         
             @media (max-width:375px){
@@ -943,12 +941,18 @@ Creating modal*/
     margin-left: 10%;
     margin-right: 10%;
    }
+   .Msg_div{
+    height: 80vh;
+    }
    }
    @media (min-width: 1200px) {
     body{
      margin-left: 20%;
      margin-right: 20%;
     }
+    /* .Msg_div{
+        height: 90vh;
+        } */
     }
 
     @media screen and (max-width: 550px) and (min-width: 200px){
@@ -1203,4 +1207,4 @@ Creating modal*/
             margin-left: 0;
         }
        }
-   
+    }
