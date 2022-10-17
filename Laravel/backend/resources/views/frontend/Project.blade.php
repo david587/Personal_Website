@@ -101,6 +101,16 @@
                 <button onclick="window.open('https://github.com/david587/Js_Projects/tree/master/menu')">View <i class="fa-brands fa-github"></i></button>
             </div>
             <div class="el"><img src="\projects_grid\Képernyőkép 2022-07-26 222621.png"></div>
+
+            <div class="el">
+                <span>Workpost management</span>
+                <p>Full stack web application, made with Laravel. User Can Register and Log In. Logged users can Make new Work posts</p>
+                    <p>2022 Okt 12</p>
+                <button onclick="window.open('https://github.com/david587/Js_Projects/tree/master/menu')">View <i class="fa-brands fa-github"></i></button>
+            </div>
+            <div class="el"><img src="\project_thumbnail\tic-tac-toe-5.png"></div>
+
+
             <div class="el">
                 <span>Grocery List</span>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia natus autem
